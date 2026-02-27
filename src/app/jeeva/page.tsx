@@ -18,7 +18,7 @@ const employeeData = {
     reportingTo: "Gopinathan / Founder",
     phone: "9790375995",
     companyName: "Dileka Innovations",
-    companyEmail: "hr@dileka.co",
+    companyEmail: "careers@dilekainnovations.com",
     verificationUrl: "https://employees.dileka.co/jeeva",
 };
 
@@ -38,13 +38,7 @@ export default function EmployeeVerificationPage() {
 
     useEffect(() => {
         // Set timestamps on client side to avoid hydration mismatch
-        const now = new Date();
-        setLastVerified(
-            now.toLocaleString("en-IN", {
-                dateStyle: "medium",
-                timeStyle: "short",
-            })
-        );
+        setLastVerified("27 Feb 2026, 1:43 pm");
         setDigitalSignature(generateHash());
     }, []);
 
