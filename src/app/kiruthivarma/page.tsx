@@ -74,8 +74,14 @@ export default function EmployeeVerificationPage() {
                         {/* Avatar */}
                         <div className="inline-block avatar-ring rounded-full mb-5">
                             <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden bg-slate-100 flex items-center justify-center">
-                                {/* Using fallback icon inside the circle as avatar might not be present, or keeping the same structure */}
-                                <User className="w-16 h-16 text-slate-400" />
+                                <Image
+                                    src="/Kiruthivarma S.jpg"
+                                    alt={employeeData.name}
+                                    width={128}
+                                    height={128}
+                                    className="w-full h-full object-cover object-top"
+                                    priority
+                                />
                             </div>
                         </div>
 
